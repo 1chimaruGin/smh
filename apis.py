@@ -25,8 +25,7 @@ class OpenAI:
 
     def __init__(self, api: openai = openai) -> None:
         self.api = api
-        self.api.organization = "org-Dl6EDMxJ4HCZdOD7Wr7te5pe"
-        self.api.api_key = "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"
+        self.api.api_key = "sk-proj-Dx80j7mX2vunw50EY2I0T3BlbkFJP6CtkwhF8wWjliKl8ktN"
 
     def speech_to_text(self, file: str, language: str = "english") -> str:
         """
