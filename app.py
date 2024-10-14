@@ -1,47 +1,43 @@
 import gradio as gr
-from apis import OpenAI
+from audo import ConservationalAI
 
-languages = {
-    "english": "en",
-    "spanish": "es",
-    "french": "fr",
-    "german": "de",
-    "italian": "it",
-    "portuguese": "pt",
-    "japanese": "ja",
-    "korean": "ko",
-    "russian": "ru",
-}
-def process(file, language):
-    openai = OpenAI()
-    print(f"[INFO] Language: {language}")
-    language = languages[language]
-    transcript = openai.speech_to_text(file, language)
-    # transcript = openai.post_process_transcript(transcript)
-    text = openai.assistant(transcript)
-    print(f"[INFO] Finished: {text}")
-    return transcript, text
+class GradioApp:
+    def __init__(self):
+        self.conservational_ai = ConservationalAI()
+        self.languages = self.conservational_ai.supported_languages()
 
-iface = gr.Interface(
-    fn=process,
-    title="Conversational AI",
-    inputs=[
-        gr.Microphone(
-            label="Audio",
-            show_label=False,
-            type="filepath",),
-        gr.components.Dropdown(
-        choices=["english", "spanish", "french", "german", "italian", "portuguese", "japanese", "korean", "russian"],
-        value="english",
-        label="Language")
-        ],
-    outputs=[
-        gr.components.Textbox(label="Question", lines=3),
-        gr.components.Textbox(label="Answer", lines=5),
-    ]
-)
+    def process(self, file, language):
+        language = self.languages[language]
+        text = self.conservational_ai.speech_to_text(file, language)
+        answer = self.conservational_ai.chat_completion(text)
+        answer_file = self.conservational_ai.text_to_speech(answer, language)
+        return text, answer, answer_file
 
-iface.queue().launch(server_name="0.0.0.0")
-    
+    def create_interface(self):
+        iface = gr.Interface(
+            fn=self.process,
+            title="Conversational AI 🚀",
+            inputs=[
+                gr.Microphone(
+                    label="Audio",
+                    show_label=False,
+                    type="filepath",
+                ),
+                gr.Dropdown(
+                    choices=list(self.languages.keys()),
+                    value="english",
+                    label="Language"
+                )
+            ],
+            outputs=[
+                gr.Textbox(label="Question", lines=3),
+                gr.Textbox(label="Answer", lines=5),
+                gr.Audio(label="Answer Audio", type="filepath"),
+            ],
+        )
+        return iface
 
-# sed -i "s/\r//" backend/app/[filename].sh
+if __name__ == "__main__":
+    ai = GradioApp()
+    iface = ai.create_interface()
+    iface.queue().launch()
