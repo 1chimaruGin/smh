@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "smh-thesis",
+  "private_key_id": "94710e2827e4e84b26397ddd36e87db45808d95c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/DaQhmpx8p9o2\nrsHZ/uEU43DAdVUSxWCwJD/bdoccAeyqJFlYvbmjqG+qNuGl1JTFzkGETZCy1dM6\nAZq2ote5Zp+cZy7rks5GRLDaorskJvh/Okhm+/FdBSyxkvUd3Wi/4zs6XmMuUpFn\nNxIlgnZEvfWNNT5y42gBVewp/yEN+txLA2Nz5XR6OUNyKKuvd1azA2F/ODhuKMlx\nhvOjPrbjacBU59XwW2pxsbFCU6dZD8/yqoxCV0beuCYJEC4GsltqCtJNd25kEJMs\nv6udzeH8mIKRen66IjdRVf0NMq9H0mR4AiDwkelT0piogi8MtCP7c776pYNs/HCX\nRiFx+FWnAgMBAAECggEABELT9U09zj3uzPzAJWeHh5q8VLPejjOewMRI3vvZbujQ\nFB9ewBmYfquZX0zSuDXHN6jY/JAU+Rgcb5UXk+6KgdUQcZbk4gDSiZirRRpkssgN\nD3Fc/1xWeWz4c+FuMW39vGyJ+/bySVcywlWPxGG7gjRRD1wvpLT+XdaXv3wJiwaS\nam7CXfJfHMh3wJhDDS7nkeP54ErkPHmSHunXBUikJqA+HJh2x7Vbd02DKc5FNPgn\nCC649H5K91UH/CJyVDl+dxXzl5IJLdAkv90HvH9gNa+xvelc01kEy0L4gtNtnbVa\n3LZ6G9PgoeB/IHk+2LSaj/IPhVTfzkfnYThjAe4SkQKBgQDp/vs5CIwaqN4brEnP\n4Jz6tufIuS6XFcZ4TXAiHJgYbmw2GqISdn2urQYXaFtJkF7CoWzENoJ8Jdio4Aq2\nNygIYRbw23Np47IFE23Oxe4C8UkQtY/OkZjstA3yV7KIAUBkNdnsiPaKSCWB2S2+\nlmIYXFEvmkvGP3xpS/c+/1AzjwKBgQDRBOS0iqDqV3jV+G0FAVwu5G0jJcO20tes\nxcCo7fxc2ThCNskc8ZTJBZf2Nm2I07iVOkhEEVV/4p2jXuPCa66ENPUL2u7Pk5Qb\nyboVji2gn8olCl6ewNIgPTpNxAxOisOkPQS9i90k8Pk3kRbKnF1EGLELXfI0p/nA\n7Gv6CWHQaQKBgQC658zLVaRzdwdSm1+qCAPbz1V8403vqJkLZu92j9h9S1ZsMQHc\nNYFWkSYYdGbWb9cBJ+e1IsU/XQueeLaVraDwcHzejqu1nQaJP2eqjjb7aret/RiN\nK4c3Kuso9BvKvxUr9kfHw+8JrW8oNM1xOrXIN5UxrNFx3SwG/4LScyUgyQKBgQC7\nuvdnKHOqxnGjTIMuUbBn9YYIYWzNEcXgSaTmlQlqozaiUe6D7n7BpiJ8YxoyIGbS\nsQwjBqaSPAl1qE5MWsbdu2q0ASkoitYltyNJJO/aKmo2pn+henG/vv5UxlZ/XKan\nJp7RV4OCIGTWAZxE0ff6p2qsWO6nWI87NZ0tb6vIsQKBgBzrUeQKwgJbfj9TZLJf\nYNXnQEysv8k4qzsuoMd+PQJklWZYNbPmb5r3nlRmSK+XouV+JqTadm9qhR9PBKCf\n93yKbwiTx6iNn800odn2HQ5MQe7EYg41KFcy3YVLmOGvY2dxWrDbyI2fnzOt7VPr\neHUUdDHmDKsMeBruM6CUA7l3\n-----END PRIVATE KEY-----\n",
+  "client_email": "speech-to-text-api@smh-thesis.iam.gserviceaccount.com",
+  "client_id": "116895554823714330293",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speech-to-text-api%40smh-thesis.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
